@@ -16,6 +16,7 @@
 /**
  * IE10+ doesn't honor `<meta name="viewport">` in some cases
  */
+@import url(../../bower_components/swiper/dist/css/swiper.css);
 @-ms-viewport {
   width: device-width; }
 
@@ -984,6 +985,59 @@ body input {
     position: relative;
 }
 
+.slider-type1 {
+    padding: 62px 0 0;
+}
+
+.slider-type1__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.slider-type1__buttons__next, .slider-type1__buttons__prev {
+    position: static;
+}
+
+.slider-type1__pagination {
+    position: static;
+}
+
+.slider-type1__slide__title {
+    font-size: 34px;
+    line-height: 45px;
+    margin-bottom: 15px;
+}
+
+.slider-type1__slide__desc {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 38px;
+}
+
+.slider-type1 .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+}
+
+.slider-type1 .swiper-pagination-bullet-active {
+    background-color: #b90222;
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    border-radius: 27px;
+    min-width: 210px;
+    height: 48px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.btn--bright {
+    background-color: #b90222;
+    color: #fff;
+}
+
 .row {
     display: flex;
 }
@@ -1091,7 +1145,7 @@ body input {
 .header__auth {
     font-size: 16px;
     display: inline-block;
-    border-bottom: 1px dashed #de0026;
+    border-bottom: 1px dashed #b90222;
 }
 
 .header__search {
