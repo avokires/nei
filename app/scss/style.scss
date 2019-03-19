@@ -1,0 +1,12 @@
+@import "../../node_modules/css-reset-and-normalize/scss/reset-and-normalize.scss";
+
+@import "general/normalize.scss";
+@import "general/mixines.scss";
+@import "general/variables.scss";
+@import "general/fonts.scss";
+@import "general/global.scss";
+
+@import "blocks/main.scss";
+@import "blocks/grid.scss";
+@import "blocks/header.scss";
+// @import "blocks/footer.scss";

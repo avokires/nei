@@ -1,0 +1,39 @@
+.row {
+    display: flex;
+  
+    &--vertical {
+      align-items: center;
+    }
+  
+    &--space-between {
+      justify-content: space-between;
+    }
+  
+    &--flex-end {
+      justify-content: flex-end;
+    }
+  
+    > [class^="row__col-"] {
+        padding: 0 10px;
+        word-break: break-word;
+  
+        &.no-padding {
+            padding: 0;
+        }
+    }
+  
+    > [class^="row__col-"]:first-child {
+        padding-left: 0;
+    }
+  
+    > [class^="row__col-"]:last-child {
+        padding-right: 0;
+    }
+  
+    @for $i from 1 through 12 {
+        .row__col-#{$i} {
+          flex-basis: (100/12*$i) * 1%;
+        }
+    }
+  }
+  

@@ -1,0 +1,21 @@
+{
+  "name": "SBP",
+  "version": "0.0.0",
+  "authors": [
+    "Insayt <vikvoe@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.sass": "*",
+    "jquery": "2.*",
+    "swiper": "^3.4.2"
+  },
+  "devDependencies": {}
+}

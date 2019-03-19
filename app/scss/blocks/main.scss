@@ -1,0 +1,77 @@
+
+
+// .main {
+//   width: 100%;
+//   margin: 0 auto;
+//   padding: 0 10px;
+//   box-sizing: border-box;
+
+//   @media (min-width: $tablet-width) {
+//     display: flex;
+//     width: $tablet-width;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//   }
+//   @media (min-width: $desktop-width) {
+//     width: $desktop-width;
+//     padding: 0 12px;
+
+//     &--orders,
+//     &--basket {
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//   }
+//   @media (min-width: $desktop-enlarged-width) {
+//     width: $desktop-enlarged-width;
+//     padding: 0 55px;
+//   }
+// }
+
+// .main__left {
+//   @media (min-width: $tablet-width) {
+//     width: 210px;
+//   }
+//   @media (min-width: $desktop-enlarged-width) {
+//     width: 270px;
+//   }
+// }
+
+// .main__right {
+//   @media (min-width: $tablet-width) {
+//     width: 510px;
+//   }
+//   @media (min-width: $desktop-width) {
+//     width: 750px;
+//     margin-top: 0;
+//   }
+//   @media (min-width: $desktop-enlarged-width) {
+//     width: 870px;
+//   }
+//   &--search {
+//     width: 100%;
+//   }
+// }
+
+// .main__block {
+//   width: 100%;
+
+//   @media (min-width: $desktop-width) {
+//     width: 710px;
+//   }
+//   @media (min-width: $desktop-enlarged-width) {
+//     width: 870px;
+//   }
+// }
+
+// .main__ad {
+//   display: none;
+
+//   @media (min-width: $desktop-width) {
+//     display: block;
+//     width: 270px;
+//     height: 503px;
+//     margin-top: 67px;
+//     background-color: #fcb900;
+//   }
+// }
