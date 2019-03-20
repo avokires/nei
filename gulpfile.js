@@ -34,7 +34,7 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         // images: 'build/img/',
-        images: 'build/img',
+        images: 'build/img/',
         fonts: 'build/fonts/'
     },
     app: { //Пути откуда брать исходники
@@ -97,19 +97,25 @@ gulp.task('style:build', function () {
         .pipe(reload({ stream: true }));
 });
 
-gulp.task('image:build', function (cb) {
+gulp.task('image:build', function () {
     gulp.src(path.app.images)
-        .pipe(changed(path.build.images))
-        .pipe(imageop({
-            optimizationLevel: 5,
-            progressive: true,
-            interlaced: true,
-            plugins: [
-                imageminMozjpeg({ quality: 50 }),
-            ]
-        })).pipe(gulp.dest(path.build.images)).on('end', cb).on('error', cb);
-
+    .pipe(changed(path.build.images))
+    .pipe(gulp.dest(path.build.images));
 });
+
+// gulp.task('image:build', function (cb) {
+//     gulp.src(path.app.images)
+//         .pipe(changed(path.build.images))
+//         .pipe(imageop({
+//             optimizationLevel: 5,
+//             progressive: true,
+//             interlaced: true,
+//             plugins: [
+//                 imageminMozjpeg({ quality: 50 }),
+//             ]
+//         })).pipe(gulp.dest(path.build.images)).on('end', cb).on('error', cb);
+
+// });
 
 gulp.task('svg:build', function () {
     return gulp.src(path.app.svg)

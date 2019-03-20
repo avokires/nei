@@ -7,14 +7,18 @@
 
     <title>Облачная телефония для бизнеса | Услуги телефонии для офиса | Оператор Neirika</title>
     <meta property="og:url" content="https://www.neirika.ru/" />
-    <meta property="og:title" content="Облачная телефония для бизнеса | Услуги телефонии для офиса | Оператор Neirika" />
-    <meta property="og:description" content="Оператор Neirika  предлагает облачную телефонию для бизнеса. Услуги телефонизации офиса по самым выгодным тарифам" />
+    <meta property="og:title"
+        content="Облачная телефония для бизнеса | Услуги телефонии для офиса | Оператор Neirika" />
+    <meta property="og:description"
+        content="Оператор Neirika  предлагает облачную телефонию для бизнеса. Услуги телефонизации офиса по самым выгодным тарифам" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/img/neirika.png" />
     <meta property="fb:app_id" content="" />
 
-    <meta name="keywords" content="Облачная телефония для бизнеса, малого, среднего, крупного, телефонизация офиса оператор Neirika ">
-    <meta name="description" content="Оператор Neirika  предлагает облачную телефонию для бизнеса. Услуги телефонизации офиса по самым выгодным тарифам" />
+    <meta name="keywords"
+        content="Облачная телефония для бизнеса, малого, среднего, крупного, телефонизация офиса оператор Neirika ">
+    <meta name="description"
+        content="Оператор Neirika  предлагает облачную телефонию для бизнеса. Услуги телефонизации офиса по самым выгодным тарифам" />
 
     <link rel="canonical" href="https://www.neirika.ru/">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -29,17 +33,22 @@
         <div class="header__top">
             <div class="container row row--vertical row--space-between">
                 <div class="row__col-4">
-                    <a class="logo" href="/">
-                        <svg>
-                            <use xlink:href="#logo"></use>
-                        </svg>
-                    </a>
+                    <a class="logo" href="/"><img src="img/nrc_logo.svg" title="Neirika логотип"></a>
                 </div>
-                <div class="row__col-8 row row--flex-end">
-                    <a class="header__phone" href="tel:+7 499 519-65-65">+7 499 519-65-65</a>
-                    <a class="header__auth" href="https://system.neirika.ru/login" target="_blank"
-                        rel="noopener noreferrer" title="Авторизоваться">Войти</a>
-                    <a class="header__search" href="#" title="Поиск по сайту">Найти</a>
+                <div class="row__col-8 row row--flex-end row--vertical">
+                    <a class="header__phone" href="tel:+7 499 519-65-65">
+                        <svg class="i-phone">
+                            <use xlink:href="#i-phone"></use>
+                        </svg>
+                        <span class="header__phone__number">+7 499 519-65-65</span>
+                    </a>
+                    <span class="header__auth"><a class="header__auth__link" href="https://system.neirika.ru/login"
+                            target="_blank" rel="noopener noreferrer" title="Авторизоваться">Войти</a></span>
+                    <a class="header__search" href="#" title="Поиск по сайту"><svg class="i-search">
+                            <use xlink:href="#i-search"></use>
+                        </svg></a>
+                    <a class="header__region" href="#" title="Страна"><img src="img/rus.png" title="Россия"
+                            alt="Россия"></a>
                 </div>
             </div>
         </div>
@@ -49,40 +58,14 @@
     </header>
     <!-- ./header -->
 
-    <div class="slider-type1 swiper-container container">
-        <!-- Add Arrows -->
-        <div class="slider-type1__buttons">
-            <div class="slider-type1__buttons__prev swiper-button-prev"></div>
-            <div class="slider-type1__buttons__next swiper-button-next"></div>
+    <main class="main">
+        //= view/slider_1.html
+
+        <div class="nrk-section nrk-section--1">
+
+            //= view/slider_2.html
         </div>
-
-        <ul class="slider-type1__wrapper swiper-wrapper">
-            <li class="swiper-slide slider-type1__slide">
-                <div class="row">
-                    <div class="row__col-6">
-                        <h3 class="slider-type1__slide__title">Облачная омниканальная платформа для развития бизнеса
-                        </h3>
-                        <div class="slider-type1__slide__desc">
-                            IT-компания Neirika создала по-настоящему ценное решение для коммуникаций – облачную
-                            коммуникационную платформу. Пользуясь нашей универсальной системой, вы с уверенностью
-                            сможете
-                            управлять своим бизнесом, повышать эффективность продаж, мгновенно подстраиваться под
-                            требования
-                            партнеров и масштабировать решения под рост вашего бизнеса.
-                        </div>
-                        <button class="btn btn--bright">Подробнее</button>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <!-- Add Pagination -->
-        <div class="slider-type1__pagination swiper-pagination"></div>
-    </div>
-
-    <svg>
-        <use xlink:href="#i-hexagon"></use>
-    </svg>
+    </main>
 
 
     <script src="js/init.js"></script>

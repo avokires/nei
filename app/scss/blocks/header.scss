@@ -18,20 +18,63 @@
   }
 }
 
+.header__auth {
+  display: flex;
+  align-items: center;
+  margin-left: 47px;
+}
+
 .header__phone {
   @include fontMedium;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__phone__number {
+  display: inline-block;
+  margin-left: 11px;
+}
+
+.i-phone {
+  width: 24px;
+  height: 24px;
 }
 
 .header__auth {
-  font-size: 16px;
-  display: inline-block;
-  border-bottom: 1px dashed $bright-color;
+  .header__auth__link {
+    font-size: 16px;
+    display: inline-block;
+    border-bottom: 1px dashed $bright-color;
+    line-height: 21px;
+    margin-left: 8px;
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2RlMDAyNiIgZD0iTTEyLDEyQTQsNCwwLDEsMCw4LDgsNCw0LDAsMCwwLDEyLDEyWm0wLDJjLTIuNjcsMC04LDEuMzQtOCw0djJIMjBWMThDMjAsMTUuMzQsMTQuNjcsMTQsMTIsMTRaIi8+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAsMEgyNFYyNEgwWiIvPjwvc3ZnPg==');
+    background-position: center -2px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .header__search {
   display: inline-block;
-  text-indent: -9999px;
+}
+
+.i-search {
+  width: 24px;
+  height: 24px;
+  margin-left: 39px;
+}
+
+.header__region {
+  display: inline-block;
+  margin-left: 38px;
 }
 
 .site-nav__link {

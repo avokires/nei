@@ -27,6 +27,14 @@ body input {
 
 .container {
   max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-slider {
+  max-width: 1600px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }

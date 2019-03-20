@@ -9846,7 +9846,7 @@ $(document).ready(function () {
     // }
 
 
-    var swiper = new Swiper('.slider-type1', {
+    var swiper1 = new Swiper('.slider-type1', {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
@@ -9860,5 +9860,15 @@ $(document).ready(function () {
         },
       });
     
+
+    var swiper2 = new Swiper('.slider-type2', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
 
 });
